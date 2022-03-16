@@ -33,6 +33,7 @@
     height:70vh;
     border-radius:30px;
     position: absolute;
+    overflow: hidden;
 }
 .a-img{
   width: 100%;
@@ -111,3 +112,39 @@ div  ul li a {
       width:85%;
       color:#555;
   }
+  @media  screen and (max-width: 480px) {
+    .a{
+        flex-direction: column;
+    }
+    .a-img{
+        display: none; 
+    }
+}
+@media screen and (max-width:480px) {
+    .a{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .a-left{
+        width: 100%;
+
+    }
+    .a-card{
+        height: 30vh;
+        
+    }
+    .a-card.bg{
+        display: none;
+        
+    }
+    .a-right{
+        padding: 20px;
+    }
+    div ul{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+
+    }
+}

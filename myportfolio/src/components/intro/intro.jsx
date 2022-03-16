@@ -1,6 +1,10 @@
-import './intro.css'
-import Me from '../../img/me.png'
+import './intro.css';
+import {useContext} from 'react';
+import Me from '../../img/me.png';
+import { ThemeContext } from '../../context';
 const Intro = ()=>{
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode ;
     return (
         <div className='i'>
             <div className="i-left">
@@ -12,7 +16,7 @@ const Intro = ()=>{
                             <div className="i-title-item">Web Developer</div>
                         </div>
                     </div>
-                    <p className="i-desc">
+                    <p className="i-desc" style={{color:darkMode ?"white" : "#555"}}>
                     I am a Full-Stack Web Developer with a specialisation in MERN Stack, JavaScript, HTML and CSS. I am keen and enthusiastic to apply what I have learned to build products and services that will help people. I see myself working in an organisation which creates innovative user-centric applications. I hope to continually challenge myself and grow with the organisation I am a part of.
 
                     </p>

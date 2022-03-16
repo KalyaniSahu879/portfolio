@@ -1,5 +1,11 @@
+import {useContext} from 'react'
+
+import { ThemeContext } from '../../context';
 import './about.css'
 const About = () =>{
+
+const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode ;
     return (
         <div className="a">
             <div className="a-left">
@@ -14,7 +20,7 @@ const About = () =>{
                 
 
                 <h1 className='a-title'>What I Do</h1>
-                <p className='a-sub'>
+                <p style={{color:darkMode ?"white" : "#555"}} className='a-sub'>
                 CRAZY FULL STACK WEB DEVELOPER WHO KNOW THESE TECH STACKS
                 </p>
                 
@@ -30,11 +36,11 @@ const About = () =>{
 
 
                 </div> */}
-                <p>⚡ Able to work successfully in a deadline-driven, fast paced environment and effectively multi-task priorities while being flexible and adapting to change </p>
-                <p>⚡ Technical problem solving and strong debugging skills</p>
+                <p style={{color:darkMode ?"white" : "#555"}} >⚡ Able to work successfully in a deadline-driven, fast paced environment and effectively multi-task priorities while being flexible and adapting to change </p>
+                <p style={{color:darkMode ?"white" : "#555"}}>⚡ Technical problem solving and strong debugging skills</p>
                 <div>
-                <ul>
-                    <li>
+                <ul >
+                    <li >
                         <a href="#">
                         <i class="fab fa-html5"></i>
                         

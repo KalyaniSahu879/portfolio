@@ -9,7 +9,7 @@ const Product = ({img,link,title}) =>{
                <div className="p-circle"></div>
 
            </div>
-           <a href={link} target="_blank">
+           <a href={link} target="_blank" rel="noreferrer">
                <img src={img} alt="" className='p-img'/>
            </a>
            <h1>{title}</h1>

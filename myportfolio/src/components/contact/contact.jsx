@@ -3,7 +3,10 @@ import {useRef, useState, useContext} from 'react'
 import phone from '../../img/phone.png';
 import email from '../../img/email.png';
 import address from '../../img/address.png';
+import git from '../../img/git.png';
+import linkedin from '../../img/linkedin.png'
 import emailjs from 'emailjs-com'
+
 import { ThemeContext } from '../../context';
 
 
@@ -43,6 +46,18 @@ const handleSubmit = (e)=>{
                         </div>
                         <div className="c-info-item">
                             <img 
+                            src={git} alt="" 
+                            className="c-icon" />
+                            <a href="https://github.com/KalyaniSahu879" target="_blank">KalyaniSahu879</a>
+                        </div>
+                        <div className="c-info-item">
+                            <img 
+                            src={linkedin} alt="" 
+                            className="c-icon" />
+                            <a href="https://www.linkedin.com/in/kalyani-sahu-31266a1a9/" target="_blank">Kalyani Sahu</a>
+                        </div>
+                        <div className="c-info-item">
+                            <img 
                             src={email} alt="" 
                             className="c-icon" />
                             sahu.kalyani879@gmail.com
@@ -57,7 +72,7 @@ const handleSubmit = (e)=>{
                 </div>
                 <div className="c-right">
                     <p className="c-desc">
-                    <b>What's ypur story?</b> Get in tauch. Always available for freelancing if the right project comes along me.
+                    <b>What's your story?</b> Get in tauch. Always available for freelancing if the right project comes along me.
 
                 </p>
                 <form ref={formRef} onSubmit={handleSubmit}>

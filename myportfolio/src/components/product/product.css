@@ -1,6 +1,6 @@
 .p{
     width: 30%;
-    height:40vh;
+    height:50vh;
     margin:20px 10px;
     border:2px solid rgb(243 , 242,242);
     border-radius: 10px 10px 0px 0px;
@@ -19,24 +19,40 @@
     height:6px;
     border-radius: 50px;
     margin:3px;
-    background-color: white;
+    background-color: green;
 }
 .p-img{
     width: 100%;
     transition: all 5s ease;
-    height:70%;
+    height:50%;
 }
-.p:hover .p-img{
-    transform: translateY(-100%);
+.demo-div{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.demo-div > button{
+    padding:10px;
+    height:20%;
+}
+.p:hover .p-img {
+    transform: translateY(-50%);
+}
+.p-desc{
+    text-align: justify;
+    width: 100%;
 }
 .pl-desc{
-
 width:100%
 }
+
 @media screen and (max-width:480px) {
     .p{
         width: 40%;
         height: 20vh;
-        
     }
+        .p-img{
+            height:60%;
+    }
+        
 }

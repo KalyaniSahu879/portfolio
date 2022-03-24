@@ -26,7 +26,8 @@
 @media screen and (max-width:480px) {
     .pl{
         padding: 10px;
-
+        /* border:2px solid red; */
+        margin-top: 15vh;
     }
     .pl-text{
         width:100%;
